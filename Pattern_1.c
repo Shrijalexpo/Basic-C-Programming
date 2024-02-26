@@ -1,9 +1,14 @@
 //
-// Created by Shrijal Gupta on 26/02/24.
+// Pattern 1
+/*  * * * * * * * * * *
+    *                 *
+    *                 *
+    * * * * * * * * * *
+*/
 //
 #include <stdio.h>
 
-int main() {
+int pattern_1() {
     int m, n, i, j;
     printf("Enter the number of rows: ");
     scanf("%d", &m);
