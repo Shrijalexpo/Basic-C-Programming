@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void display(int[], int);
+int main()
+{
+    int len;
+    printf("enter length of an array\n");
+    scanf("%d",&len);
+    int even[len] , odd[len];
+    int a = 0 ,b = 0;
+    int temp;
+    int arr[len];
+    for (int i = 0; i < len; ++i) {
+        scanf("%d",&temp);
+        arr[i] = temp;
+        if (temp % 2 == 0){
+            even[a++] = temp;
+        }
+        else{
+            odd[b++] = temp;
+        }
+    }
+    printf("Original array:\n");
+    display(arr, len);
+    printf("Odd array:\n");
+    display(odd, b);
+    printf("even array:\n");
+    display(even, a);
+}
+
+void display(int a[], int size){
+    for (int i = 0; i < size; ++i) {
+        printf("%d ",a[i]);
+    }
+    printf("\n");
+}
